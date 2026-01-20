@@ -78,8 +78,6 @@ color: #ffffff;
     position: relative;
 }
 .microphone{ 
-    /* width: 350px;
-    height: 350px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +86,6 @@ color: #ffffff;
     background-position: center;
     padding: 90px;
     margin-left: 45px;
-   /* position: fixed; */
 }
 .newbtn button{
     width: 75px;
@@ -285,13 +282,61 @@ grid-template-areas:
     padding: 0px 24px 12px 24px;
     line-height: 25px;
 }
-.videos p i{
+.videos .time{
     color: #00FF88;
 }
-
-
-
-
+.host{
+    padding: 120px 200px;
+    color: #FFFFFF;
+}
+.host h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight:bold;
+    margin-bottom: 40px;
+}
+.hostpic{
+    grid-area:hostpic;
+}
+.host-info{
+    grid-area: host-info;
+}
+.host-container{
+     gap: 24px;
+    padding: 40px;
+    background-color:#250D44;
+    box-shadow:0 6px 50px 0 #06060628;
+    border-radius: 40px;
+    display:grid;
+    grid-template-areas: 
+    "hostpic host-info"
+}
+.icone{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    color: transparent;
+    background: linear-gradient(to top,#F7E93F 0% 20%,#FB09B4 51% 100%,#9100F8 100% 100% );
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.icone i{
+border: #ec4e4e 0.5px solid; 
+border-radius: 50%;
+padding: 3px;
+}
+.host-info h2{
+    padding-top: 9px;
+    padding-bottom: 16px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.host-info p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 18px;
+}
 
 
 
@@ -340,5 +385,21 @@ grid-template-areas:
     "video1"
     "video2"
     "video3"
+}
+.host{max-width: 576px;
+    padding: 50px 60px;
+
+}
+    
+.host-container{ 
+    text-align: center;
+    width: 300px;
+    width: 333px;
+    grid-template-areas: 
+    "hostpic"
+   "host-info"
+}
+.icone{
+    padding-left: 65px;
 }
 }
