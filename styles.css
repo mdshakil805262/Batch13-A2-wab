@@ -72,9 +72,10 @@ color: #ffffff;
     margin: 0 auto;
     text-align: center;
     padding-top: 101px;
+    padding-bottom: 101px;
     background-image: url(./icon/hero-bg.png);
     background-repeat: no-repeat;
-    
+    position: relative;
 }
 .microphone{ 
     /* width: 350px;
@@ -88,6 +89,23 @@ color: #ffffff;
     padding: 90px;
     margin-left: 45px;
    /* position: fixed; */
+}
+.newbtn button{
+    width: 75px;
+    height: 38px;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px; 
+    color: #000000;
+    background-color: #00FF88;
+    border: none;
+    border-radius: 10000px;
+    position: absolute;
+    bottom: 580px;
+    right: 570px;
+
 }
 .textbtn h3{
     color: #FFFFFF;
@@ -126,6 +144,53 @@ color: #ffffff;
     border-radius: 10000px;
     border-color:#00FF88; ;
 }
+.about-content{
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+.about-content h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    
+}
+.about-content p{
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 23px;
+}
+.card-content{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    gap: 80px;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+}
+
+.card-content .caard{
+    width: 220px;
+    height: 94px;
+    text-align: center;
+}
+.card-content .caard h1{
+    font-size: 48px;
+    font-weight: 900px;
+    color: #00FF88;
+    /* margin-bottom: 10px; */
+}
+.card-content .caard p{
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+
+
 
 
 
@@ -138,4 +203,6 @@ color: #ffffff;
         margin-bottom: 30px;
         margin-left: 120px;
     }
+    
+    
 }
