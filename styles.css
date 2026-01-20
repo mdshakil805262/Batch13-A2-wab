@@ -34,7 +34,7 @@ body{
    text-decoration: none;
     color: #ffffff;
     font-weight: 500px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .navber h2{
 font-size: x-large;
@@ -93,7 +93,7 @@ color: #ffffff;
 .newbtn button{
     width: 75px;
     height: 38px;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 600;
     justify-content: center;
     align-items: center;
@@ -109,13 +109,13 @@ color: #ffffff;
 }
 .textbtn h3{
     color: #FFFFFF;
-    font-size: 60px;
+    font-size: 3.8rem;
     font-weight: 800px;
     margin-top: 40px;
 }
 .textbtn p{
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400px;
     margin-top: 8px;
     margin-bottom: 24px;
@@ -128,7 +128,7 @@ color: #ffffff;
     border-radius: 10000px;
     border: none;
     background: linear-gradient(45deg,#F7E93F 0% 20%,#FB09B4 51%,#9100F8 100% 100% );
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600px;
     color: #FFFFFF;
 }
@@ -139,7 +139,7 @@ color: #ffffff;
     padding: 12px 20px;
     background: none;
     color: #00FF88;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600px;
     border-radius: 10000px;
     border-color:#00FF88; ;
@@ -152,13 +152,13 @@ color: #ffffff;
     margin-top: 50px;
 }
 .about-content h1{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 16px;
     
 }
 .about-content p{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400px;
     line-height: 23px;
 }
@@ -179,15 +179,79 @@ color: #ffffff;
     text-align: center;
 }
 .card-content .caard h1{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900px;
     color: #00FF88;
-    /* margin-bottom: 10px; */
 }
 .card-content .caard p{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400px;
 }
+
+.About{
+    padding: 120px 200px;
+    color: #FFFFFF;
+    background-color: #351165;
+}
+.About h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.cardsection1{
+    grid-area: cardsection1;
+}
+.cardsection1 img{
+    padding-top: 70px;
+}
+.cardsection2{
+    grid-area: cardsection2;
+}
+.cardsection3{
+    grid-area: cardsection3;
+}
+.cardsection4{
+    grid-area: cardsection4;
+}
+.cardsection5{
+    grid-area: cardsection5;
+}
+.about-card{
+display: grid;
+grid-template-areas:
+    "cardsection1 cardsection2 cardsection2"
+    "cardsection1 cardsection3 cardsection3"
+    "cardsection4 cardsection4 cardsection5"
+}
+.cardinfo{
+    border-radius: 40px;
+    box-shadow: 0 6px 50px 0 #00000028;
+    padding: 40px;
+    margin: 20px;
+
+}
+.cardinfo h3{
+    padding: 16px 40px 16px 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.cardinfo p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -203,6 +267,32 @@ color: #ffffff;
         margin-bottom: 30px;
         margin-left: 120px;
     }
-    
-    
+    .card-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .about-content{
+         margin-left: 2px;
+    margin-right: 20px;
+    margin-top: 50px;
+    }
+    .About{
+    padding: 10px 20px;}
+    .About h1{
+    font-size: 2.5rem;
+    margin-top: 40px;
+}
+    .about-card{
+        display: grid;
+        grid-template-areas:
+    "cardsection1"
+    "cardsection2"
+    "cardsection3"
+    "cardsection4"
+    "cardsection5"
+}
 }
